@@ -30,7 +30,7 @@ public class GetIdSums {
             String game = entry.getValue();
 
             String[] sets = game.split(";");
-            boolean approved = true; // Assume the set is approved unless proven otherwise
+            boolean approved = true;
 
             for (String set : sets) {
                 int blueCubes = 0;
@@ -51,10 +51,9 @@ public class GetIdSums {
                         case "green" -> greenCubes += count;
                     }
 
-                    // Check if the total counts for each color in the set are within the allowed limits
                     if (blueCubes > BLUE_CUBES || redCubes > RED_CUBES || greenCubes > GREEN_CUBES) {
-                        approved = false; // Set to false if any cube exceeds the limit
-                        break; // No need to check further in this set
+                        approved = false;
+                        break;
                     }
                 }
             }
@@ -99,12 +98,10 @@ public class GetIdSums {
             if (Character.isDigit(currentChar)) {
                 idBuilder.append(currentChar);
             } else if (idBuilder.length() > 0) {
-                // If a sequence of digits has started and a non-digit is encountered, stop parsing
                 break;
             }
         }
 
-        // Convert the accumulated digits to an integer
         if (idBuilder.length() > 0) {
             id = Integer.parseInt(idBuilder.toString());
         }
