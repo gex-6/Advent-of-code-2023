@@ -58,7 +58,6 @@ public class GetIdSums {
                 }
             }
             if (approved) {
-                System.out.println(entry.getKey());
                 idSum += entry.getKey();
             }
         }

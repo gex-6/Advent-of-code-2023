@@ -10,12 +10,5 @@ public class Run {
         GetIdSums cubesGame = new GetIdSums(fileName);
         cubesGame.readInput();
         System.out.println(cubesGame.calculateBallsInGame());
-
-        for (HashMap.Entry<Integer, String> entry : cubesGame.getInput().entrySet()) {
-            int key = entry.getKey();
-            String value = entry.getValue();
-            System.out.println("ID: " + key + " --- Games: " + value);
-        }
-
     }
 }
