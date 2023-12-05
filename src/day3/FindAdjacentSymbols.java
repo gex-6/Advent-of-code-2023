@@ -21,7 +21,6 @@ public class FindAdjacentSymbols {
 
     public int countTheResult() {
         collectAdjacentNumbers();
-        System.out.println(results);
 
         return results.stream()
                 .mapToInt(Integer::parseInt)

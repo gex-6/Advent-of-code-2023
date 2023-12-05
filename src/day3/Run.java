@@ -9,12 +9,6 @@ public class Run {
         FindAdjacentSymbols findSymbols = new FindAdjacentSymbols(fileName);
         findSymbols.readInput();
 
-        System.out.println();
-
-        System.out.println();
-
         System.out.println(findSymbols.countTheResult());
-
-
     }
 }
