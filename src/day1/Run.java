@@ -5,8 +5,7 @@ public class Run {
 
         String fileName = "src/day1/puzzleInput.txt";
 
-        GetCalibration calibrate = new GetCalibration(fileName);
-        calibrate.readInput();
+        GetCalibrationExt calibrate = new GetCalibrationExt(fileName);
         System.out.println(calibrate.countCalibrationValue());
     }
 }
