@@ -7,7 +7,7 @@ public class Run {
 
         String fileName = "src/day5/puzzleInput.txt";
 
-        AlmanacReader reader = new AlmanacReader(fileName);
+        AlmanacReaderExt reader = new AlmanacReaderExt(fileName);
         reader.calculateTheLocation();
     }
 }
