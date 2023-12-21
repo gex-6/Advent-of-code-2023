@@ -7,8 +7,7 @@ public class Run {
 
         String fileName = "src/day2/puzzleInput.txt";
 
-        GetIdSums cubesGame = new GetIdSums(fileName);
-        cubesGame.readInput();
-        System.out.println(cubesGame.calculateBallsInGame());
+        GetIdSumsExt cubesGame = new GetIdSumsExt(fileName);
+        System.out.println("\n" + cubesGame.calculateTheMinBallsSum());
     }
 }
