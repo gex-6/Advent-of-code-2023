@@ -29,10 +29,6 @@ public class CamelGameExt {
 
     private void sortHands() {
 
-//        for (String[] pair : camelCards) {
-//            System.out.println("[" + pair[0] + ", " + pair[1] + "]");
-//        }
-
         String[] temp;
         boolean swapped;
 
@@ -51,13 +47,6 @@ public class CamelGameExt {
             if (!swapped)
                 break;
         }
-
-//        System.out.println();
-//        System.out.println("after sorting");
-//        for (String[] pair : camelCards) {
-//            System.out.println("[" + pair[0] + ", " + pair[1] + "]");
-//        }
-//        System.out.println();
     }
 
     private boolean isHandBigger(String[] hand1, String[] hand2) {
