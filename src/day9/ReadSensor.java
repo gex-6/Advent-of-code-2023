@@ -1,8 +1,5 @@
 package day9;
 
-import day4.PointsCounter;
-
-import javax.print.attribute.IntegerSyntax;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
